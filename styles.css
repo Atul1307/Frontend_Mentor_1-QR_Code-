@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(161, 176, 237);
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.img-container {
+  padding: 15px;
+}
+
+img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+p {
+  color: grey;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px; /* Add some space between content and footer */
+}
+
+/* Add styles for smaller screens (e.g., mobile devices) */
+@media only screen and (min-width: 992px) {
+  .contentContainer {
+    padding: 10px;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .contentContainer {
+    width: 87%;
+    height: auto;
+    padding: 10px;
+    margin: 10px auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contentContainer {
+    width: 98%;
+    height: auto;
+    padding: 10px;
+    margin: 10px auto;
+  }
+}
